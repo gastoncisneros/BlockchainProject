@@ -92,8 +92,8 @@ describe('The UsersContract', async() => {
             .send({ from: accounts[1], gas: '500000' });
 
         let total = await usersContract.methods.totalUsers().call();       
-         
-        assert.strictEqual(total, 2);        
+
+        assert.strictEqual(total, '2');        
     });
 
 });
